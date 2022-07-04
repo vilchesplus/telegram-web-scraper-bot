@@ -20,16 +20,16 @@ while True:
 #Call email function
         ResultText = "The website is down"
         print(ResultText)
-        requests.get("https://api.telegram.org/bot5439717673:AAF5VcZDxeQX9Ec2QBwYWrvuwM-EMsTYN0A/sendMessage?chat_id=5002532208&text={}".format(ResultText))
+        requests.get("https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage?chat_id=5002532208&text={}".format(ResultText))
     else:
         ResultText = "The website is up"
  
         print(ResultText)
-        requests.get("https://api.telegram.org/bot5439717673:AAF5VcZDxeQX9Ec2QBwYWrvuwM-EMsTYN0A/sendMessage?chat_id=5002532208&text={}".format(ResultText))
+        requests.get("https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage?chat_id=5002532208&text={}".format(ResultText))
         time.sleep(2000)
 
 
 
 #ParsedRestultText = urllib.parse.quote_plus(ResultText)
 
-#requests.get("https://api.telegram.org/bot5439717673:AAF5VcZDxeQX9Ec2QBwYWrvuwM-EMsTYN0A/sendMessage?chat_id=[5002532208]&text={}".format(ParsedResultText))
+#requests.get("https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage?chat_id=[5002532208]&text={}".format(ParsedResultText))
