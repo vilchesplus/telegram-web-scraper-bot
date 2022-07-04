@@ -1,5 +1,5 @@
 #! python3
-import bs4, requests, smtplib
+import bs4, requests, smtplib, urllib.request, time
 
 while True:
     status = urllib.request.urlopen('https://www.microsoft.com/es-ES/download/details.aspx?id=53127').getcode()
