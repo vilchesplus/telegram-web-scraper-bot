@@ -9,7 +9,7 @@ while True:
 #Call email function
         ResultText = "The website is down"
         print(ResultText)
-        requests.get("https://api.telegram.org/bot5439717673:AAF5VcZDxeQX9Ec2QBwYWrvuwM-EMsTYN0A/sendMessage?chat_id=5002532208&text={}".format(ResultText))
+        requests.get("https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage?chat_id=5002532208&text={}".format(ResultText))
     else:
         getPage = requests.get('https://www.microsoft.com/es-ES/download/details.aspx?id=53127')
         getPage1 = requests.get('https://www.microsoft.com/es-es/download/details.aspx?id=39717')
@@ -18,12 +18,12 @@ while True:
         ResultText = a[6].get_text()
         cstr = "Datos del Gateway actualizados"
         b = cstr + ResultText.encode('raw_unicode_escape').decode('utf8')
-        requests.get("https://api.telegram.org/bot5439717673:AAF5VcZDxeQX9Ec2QBwYWrvuwM-EMsTYN0A/sendMessage?chat_id=5002532208&text={}".format(b))
+        requests.get("https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage?chat_id=5002532208&text={}".format(b))
         soup = bs4.BeautifulSoup(getPage1.text, 'html.parser')
         a = soup.find_all('div', {"class" : "row-fluid no-margin-row"})
         ResultText = a[6].get_text()
         cstr = "Datos del Integration Runtime actualizados"
         b = cstr + ResultText.encode('raw_unicode_escape').decode('utf8')
-        requests.get("https://api.telegram.org/bot5439717673:AAF5VcZDxeQX9Ec2QBwYWrvuwM-EMsTYN0A/sendMessage?chat_id=5002532208&text={}".format(b))
+        requests.get("https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage?chat_id=5002532208&text={}".format(b))
         time.sleep(2000)
 
