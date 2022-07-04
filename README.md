@@ -31,7 +31,7 @@
   <h3 align="center">Web-scraper</h3>
 
   <p align="center">
-    Pequeño **web-scraper** orientado a la obtención automatizada de datos.
+    PequeÃ±o ** web-scraper ** orientado a la obtenciÃ³n automatizada de datos.
     
   </p>
 </div>
@@ -40,7 +40,7 @@
 <!-- Acerca del proyecto -->
 ## Acerca del proyecto
 
-Se trata de un script escrito en Python que permite realizar web-scraping y comunicar la información relevante obtenida mediante un bot de Telegram.
+Se trata de un script escrito en Python que permite realizar web-scraping y comunicar la informaciÃ³n relevante obtenida mediante un bot de Telegram.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -58,7 +58,7 @@ Se trata de un script escrito en Python que permite realizar web-scraping y comu
 <!--  -->
 ## Crear bot
 
-Lo primero sería registrar un bot y obtener el correspondiente token. Es sencillo siguiendo la siguiente [URL](https://telegram.org/faq#bot)
+Lo primero serÃ­a registrar un bot y obtener el correspondiente token. Es sencillo siguiendo la siguiente [URL](https://telegram.org/faq#bot)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
