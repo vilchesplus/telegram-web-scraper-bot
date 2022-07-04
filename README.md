@@ -31,7 +31,7 @@
   <h3 align="center">Web-scraper</h3>
 
   <p align="center">
-    Pequeño *web-scraper* orientado a la obtención automatizada de datos.
+    Pequeño **web-scraper** orientado a la obtención automatizada de datos.
     
   </p>
 </div>
