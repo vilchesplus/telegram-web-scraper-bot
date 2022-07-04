@@ -31,7 +31,7 @@
   <h3 align="center">Web-scraper</h3>
 
   <p align="center">
-    Pequeño ** web-scraper ** orientado a la obtención automatizada de datos.
+    Pequeño web-scraper orientado a la obtención automatizada de datos.
     
   </p>
 </div>
@@ -40,7 +40,7 @@
 <!-- Acerca del proyecto -->
 ## Acerca del proyecto
 
-Se trata de un script escrito en Python que permite realizar web-scraping y comunicar la información relevante obtenida mediante un bot de Telegram.
+Se trata de un script escrito en Python que permite realizar **web-scraping** y comunicar la información relevante obtenida mediante un bot de Telegram.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
