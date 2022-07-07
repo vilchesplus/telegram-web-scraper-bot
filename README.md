@@ -81,6 +81,8 @@ En nuestro caso, monitorizar el estado de una website, y las versiones disponibl
 * [URL](https://www.codementor.io/@gergelykovcs/scrape-the-web-with-python-and-get-updates-on-telegram-rv83fbgie)
 * [URL](https://www.codementor.io/@gergelykovcs/how-and-why-i-built-a-simple-web-scrapig-script-to-notify-us-about-our-favourite-food-fcrhuhn45)
 * [URL](https://serrodcal.medium.com/un-vistazo-pr%C3%A1ctico-a-kubernetes-c4630a1b0df)
+* [URL](https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html)
+* [URL](https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5)
 
 <!-- CONTACTO -->
 ## Contacto
