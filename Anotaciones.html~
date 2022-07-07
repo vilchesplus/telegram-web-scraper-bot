@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-04 lu. 14:58 -->
+<!-- 2022-07-06 mi. 14:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Anotaciones</title>
@@ -192,19 +192,42 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
 </style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Anotaciones</h1>
 <p>
-<a href="https://github.com/vilchesplus/telegram-web-scraper-bot">https://github.com/vilchesplus/telegram-web-scraper-bot</a>
+<a href="https://github.com/vilchesplus/telegram-web-scraper-bot">https://github.com/vilchesplus/telegram-web-scraper-bot</a> \n
+<a href="https://hub.docker.com/u/vilchesplus">https://hub.docker.com/u/vilchesplus</a>
 </p>
+
 
 <p>
 Tenemos 2 <b>scripts</b> que nos facilitan el web-scraping y monitorización de:
 </p>
 <ul class="org-ul">
-<li>Estado de una web</li>
+<li>Estado de una web.</li>
 <li>Última versión de un software concreto.</li>
 </ul>
 
@@ -215,9 +238,53 @@ Está escrito en Python, y se proporciona un <b>token</b> que corresponde con un
 <p>
 Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 </p>
+
+
+<div id="org9a05d78" class="figure">
+<p><img src="./mensajes-recibido.jpeg" alt="mensajes-recibido.jpeg" />
+</p>
+</div>
+
+<p>
+Otra manera de acuerdo con la manera de trabajar que se está instaurando es la siguiente:
+</p>
+
+<div id="outline-container-org910014d" class="outline-2">
+<h2 id="org910014d"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Objetivo: CI/CD</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+ La combinación de la integración continua y el despliegue se denomina a menudo CI/CD.
+Un pipeline típico para aplicaciones en contenedor podría ser como el siguiente:
+</p>
+<ol class="org-ol">
+<li>Un desarrollador empuja sus cambios de código al repositorio.</li>
+
+<li>El sistema de construcción construye automáticamente la versión actual del código y ejecuta pruebas.</li>
+
+<li>Si todas las pruebas pasan, la imagen del contenedor se publicará en el registro central de contenedores.</li>
+
+<li>El contenedor recién construido se despliega automáticamente en un entorno de preparación.</li>
+
+<li>El entorno de ensayo se somete a algunas pruebas de aceptación automatizadas y/o manuales.</li>
+
+<li>La imagen del contenedor verificada se despliega en producción.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgff3a42d" class="outline-2">
+<h2 id="orgff3a42d"><span class="section-number-2">2.</span> <span class="todo TODO">TODO</span> Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)</h2>
+<div class="outline-text-2" id="text-2">
+
+<div id="org5224430" class="figure">
+<p><img src="./Aplicaciones.PNG" alt="Aplicaciones.PNG" />
+</p>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2022-07-04 lu. 14:58</p>
+<p class="date">Created: 2022-07-06 mi. 14:14</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

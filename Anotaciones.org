@@ -3,6 +3,10 @@
 
 [[https://github.com/vilchesplus/telegram-web-scraper-bot]]
 
+
+[[https://hub.docker.com/u/vilchesplus]]
+
+
 Tenemos 2 *scripts* que nos facilitan el web-scraping y monitorización de:
 - Estado de una web.
 - Última versión de un software concreto.
@@ -10,3 +14,28 @@ Tenemos 2 *scripts* que nos facilitan el web-scraping y monitorización de:
 Está escrito en Python, y se proporciona un *token* que corresponde con un bot de Telegram para que nos envíe la información de manera temporal.
 
 Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
+
+[[./mensajes-recibido.jpeg]]
+
+Otra manera de acuerdo con la manera de trabajar que se está instaurando es la siguiente:
+
+* TODO Objetivo: CI/CD
+ La combinación de la integración continua y el despliegue se denomina a menudo CI/CD.
+Un pipeline típico para aplicaciones en contenedor podría ser como el siguiente:
+1. Un desarrollador empuja sus cambios de código al repositorio.
+   
+2. El sistema de construcción construye automáticamente la versión actual del código y ejecuta pruebas.
+
+3. Si todas las pruebas pasan, la imagen del contenedor se publicará en el registro central de contenedores.
+
+4. El contenedor recién construido se despliega automáticamente en un entorno de preparación.
+   
+5. El entorno de ensayo se somete a algunas pruebas de aceptación automatizadas y/o manuales.
+ 
+6. La imagen del contenedor verificada se despliega en producción.
+
+* TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
+
+[[./Aplicaciones.PNG]]
+
+
