@@ -1,6 +1,7 @@
 #! python3
 import bs4, requests, smtplib, urllib.request, time
 from decouple import config
+TOKEN = config('TOKEN')
 while True:
     status = urllib.request.urlopen('https://www.microsoft.com/es-ES/download/details.aspx?id=53127').getcode()
     status1 = urllib.request.urlopen('https://www.microsoft.com/es-es/download/details.aspx?id=39717').getcode()
