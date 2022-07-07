@@ -19,7 +19,7 @@ Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 
 Otra manera de acuerdo con la manera de trabajar que se está instaurando es la siguiente:
 
-* TODO Objetivo: CI/CD
+** TODO Objetivo: CI/CD
  La combinación de la integración continua y el despliegue se denomina a menudo CI/CD.
 Un pipeline típico para aplicaciones en contenedor podría ser como el siguiente:
 1. Un desarrollador empuja sus cambios de código al repositorio.
@@ -34,7 +34,7 @@ Un pipeline típico para aplicaciones en contenedor podría ser como el siguiente:
  
 6. La imagen del contenedor verificada se despliega en producción.
 
-* TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
+** TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
 
 [[./Aplicaciones.PNG]]
 

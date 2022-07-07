@@ -192,33 +192,16 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
 </style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Anotaciones</h1>
 <p>
-<a href="https://github.com/vilchesplus/telegram-web-scraper-bot">https://github.com/vilchesplus/telegram-web-scraper-bot</a> \n
+<a href="https://github.com/vilchesplus/telegram-web-scraper-bot">https://github.com/vilchesplus/telegram-web-scraper-bot</a>
+</p>
+
+
+<p>
 <a href="https://hub.docker.com/u/vilchesplus">https://hub.docker.com/u/vilchesplus</a>
 </p>
 
@@ -240,7 +223,7 @@ Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 </p>
 
 
-<div id="org9a05d78" class="figure">
+<div id="org2f0fd89" class="figure">
 <p><img src="./mensajes-recibido.jpeg" alt="mensajes-recibido.jpeg" />
 </p>
 </div>
@@ -249,8 +232,8 @@ Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 Otra manera de acuerdo con la manera de trabajar que se está instaurando es la siguiente:
 </p>
 
-<div id="outline-container-org910014d" class="outline-2">
-<h2 id="org910014d"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Objetivo: CI/CD</h2>
+<div id="outline-container-org3e48a33" class="outline-2">
+<h2 id="org3e48a33"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Objetivo: CI/CD</h2>
 <div class="outline-text-2" id="text-1">
 <p>
  La combinación de la integración continua y el despliegue se denomina a menudo CI/CD.
@@ -272,11 +255,11 @@ Un pipeline típico para aplicaciones en contenedor podría ser como el siguient
 </div>
 </div>
 
-<div id="outline-container-orgff3a42d" class="outline-2">
-<h2 id="orgff3a42d"><span class="section-number-2">2.</span> <span class="todo TODO">TODO</span> Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)</h2>
+<div id="outline-container-orgd65f771" class="outline-2">
+<h2 id="orgd65f771"><span class="section-number-2">2.</span> <span class="todo TODO">TODO</span> Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)</h2>
 <div class="outline-text-2" id="text-2">
 
-<div id="org5224430" class="figure">
+<div id="orgc76dab6" class="figure">
 <p><img src="./Aplicaciones.PNG" alt="Aplicaciones.PNG" />
 </p>
 </div>
