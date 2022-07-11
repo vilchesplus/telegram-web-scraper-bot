@@ -41,4 +41,6 @@ Un pipeline típico para aplicaciones en contenedor podría ser como el siguiente:
 
 [[./Aplicaciones.PNG]]
 
-
+#+begin_src
+c:\Program Files\Docker\Docker\resources\dockerd.exe -H=tcp://0.0.0.0:2375
+#+end_src
