@@ -68,6 +68,16 @@ Necesitaremos también abrir una conexión tunel entre github y Jenkins, mediante 
 ngrok http 8080
 #+end_src
 
+** DONE Ejecutar desde la nube los contenedores.
+[[./images/instancias.png]]
+
+
+** TODO Añadir información obtenida de la web (En construcción)
+[[./images/features.png]]
+
+
+
+
 ** TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
 
 [[./Aplicaciones.PNG]]
