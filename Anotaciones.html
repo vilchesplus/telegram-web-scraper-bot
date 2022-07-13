@@ -3,13 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-07 ju. 11:34 -->
+<!-- 2022-07-11 Mon 19:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Anotaciones</title>
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Rafael Vilches Fdez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -30,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +41,21 @@
   pre.src {
     position: relative;
     overflow: auto;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,10 +191,33 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Anotaciones</h1>
 <p>
 <a href="https://github.com/vilchesplus/telegram-web-scraper-bot">https://github.com/vilchesplus/telegram-web-scraper-bot</a>
@@ -223,18 +246,23 @@ Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 </p>
 
 
-<div id="orgce5c9a5" class="figure">
+<div id="org7915492" class="figure">
 <p><img src="./mensajes-recibido.jpeg" alt="mensajes-recibido.jpeg" />
 </p>
 </div>
 
+<div id="outline-container-org3809fd8" class="outline-2">
+<h2 id="org3809fd8"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Añadir Fecha y hora del último dato cargado en la página web.</h2>
+<div class="outline-text-2" id="text-1">
 <p>
 Otra manera de acuerdo con la manera de trabajar que se está instaurando es la siguiente:
 </p>
+</div>
+</div>
 
-<div id="outline-container-org3c0ea82" class="outline-2">
-<h2 id="org3c0ea82"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Objetivo: CI/CD</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orga703c37" class="outline-2">
+<h2 id="orga703c37"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> Objetivo: CI/CD</h2>
+<div class="outline-text-2" id="text-2">
 <p>
  La combinación de la integración continua y el despliegue se denomina a menudo CI/CD.
 Un pipeline típico para aplicaciones en contenedor podría ser como el siguiente:
@@ -255,19 +283,26 @@ Un pipeline típico para aplicaciones en contenedor podría ser como el siguient
 </div>
 </div>
 
-<div id="outline-container-org262ddfc" class="outline-2">
-<h2 id="org262ddfc"><span class="section-number-2">2.</span> <span class="todo TODO">TODO</span> Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgb98d710" class="outline-2">
+<h2 id="orgb98d710"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)</h2>
+<div class="outline-text-2" id="text-3">
 
-<div id="orgdf70d14" class="figure">
+<div id="org4324ce1" class="figure">
 <p><img src="./Aplicaciones.PNG" alt="Aplicaciones.PNG" />
 </p>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-shell">c:\Program Files\Docker\Docker\resources\dockerd.exe -H=tcp://0.0.0.0:2375
+docker network inspect bridge -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}'
+</pre>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2022-07-07 ju. 11:34</p>
+<p class="author">Author: Rafael Vilches Fdez</p>
+<p class="date">Created: 2022-07-11 Mon 19:59</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

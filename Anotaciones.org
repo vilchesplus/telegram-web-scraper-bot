@@ -37,10 +37,46 @@ Un pipeline típico para aplicaciones en contenedor podría ser como el siguiente:
  
 6. La imagen del contenedor verificada se despliega en producción.
 
+*** Instalación de Jenkins como herramienta CI/CD   
+Creamos el archivo .yaml con el que levantaremos *Jenkins* y *Sonarqube*
+
+#+begin_src shell
+version: '2'
+services:
+  jenkins:
+   image: vilchesplus/jenkins-blueocean-ci
+   container_name: jenkins
+   ports:
+    - "8080:8080"
+    - "50000:50000"
+  sonarqube:
+   image: sonarqube
+   container_name: sonarqube
+   ports:
+    - "9000:9000"
+    - "9092:9092"
+#+end_src
+
+Accedemos vía [[localhost:8080]] al servicio de Jenkins. E instalamos el plugin de *SonarQube Scanner* y *CloudBees Docker Build and Publish plugin*
+
+
+El /pipeline/ creado sería el siguiente:
+[[./images/pipeline.drawio.png]]
+
+Necesitaremos también abrir una conexión tunel entre github y Jenkins, mediante *ngrok*
+#+begin_src shell
+ngrok http 8080
+#+end_src
+
 ** TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
 
 [[./Aplicaciones.PNG]]
 
-#+begin_src
+#+begin_src shell
 c:\Program Files\Docker\Docker\resources\dockerd.exe -H=tcp://0.0.0.0:2375
+docker network inspect bridge -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}'
+#+end_src
+
+#+begin_src shell
+git push -f origin HEAD^:master #deshacer el último pull
 #+end_src
