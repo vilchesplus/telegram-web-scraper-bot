@@ -1,5 +1,7 @@
 FROM python:3.7
-COPY ./otro-dockerfile/telegram-web-scraper-bot.py /app/app.py
+COPY ./telegram-web-scraper-bot.py /app/app.py
+COPY ./.env /app/.env
+RUN pip install --no-cache-dir selenium
 RUN pip install --no-cache-dir urllib3
 RUN pip install --no-cache-dir python-time
 RUN pip install --no-cache-dir requests

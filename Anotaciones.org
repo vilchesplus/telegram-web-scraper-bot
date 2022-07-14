@@ -17,7 +17,10 @@ Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 
 [[./mensajes-recibido.jpeg]]
 
-** TODO Añadir Fecha y hora del último dato cargado en la página web.
+** DONE Añadir Fecha y hora del último dato cargado en la página web.
+
+Se ha añadido el script de Python scrapeo utilizando Selenium y un driver de Chrome para obtener el dato que comentamos, ya que realizando un scrapeo normal no es posible debido a que y cito textualmente "La fuente es sólo el HTML base que se sirve. Cuando inspeccionas la página en Chrome, estás viendo el DOM renderizado después de que cualquier javascript en la página haya terminado de hacer su trabajo. En otras palabras, los elementos que buscas pueden ser creados dinámicamente".
+
 
 
 Otra manera de acuerdo con la manera de trabajar que se está instaurando es la siguiente:
@@ -63,7 +66,7 @@ Accedemos vía [[localhost:8080]] al servicio de Jenkins. E instalamos el plugin 
 El /pipeline/ creado sería el siguiente:
 [[./images/pipeline.drawio.png]]
 
-Necesitaremos también abrir una conexión tunel entre github y Jenkins, mediante *ngrok*
+Necesitaremos también abrir una conexión tunel entre github y Jenkins, mediante *ngrok*. ngrok nos permite exponer a internet una URL generada dinámicamente, la cual apunta a un servicio web que se está ejecutando en nuestra máquina local.
 #+begin_src shell
 ngrok http 8080
 #+end_src
