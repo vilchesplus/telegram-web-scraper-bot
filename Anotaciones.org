@@ -74,7 +74,7 @@ ngrok http 8080
 #+end_src
 
 ** DONE Ejecutar desde la nube los contenedores.
-[[./images/instancias.png]]
+[[./images/instancias.PNG]]
 
 
 ** TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
