@@ -15,11 +15,13 @@ Está escrito en Python, y se proporciona un *token* que corresponde con un bot d
 
 Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 
-[[./mensajes-recibido.jpeg]]
-
 ** DONE Añadir Fecha y hora del último dato cargado en la página web.
 
 Se ha añadido el script de Python scrapeo utilizando Selenium y un driver de Chrome para obtener el dato que comentamos, ya que realizando un scrapeo normal no es posible debido a que y cito textualmente "La fuente es sólo el HTML base que se sirve. Cuando inspeccionas la página en Chrome, estás viendo el DOM renderizado después de que cualquier javascript en la página haya terminado de hacer su trabajo. En otras palabras, los elementos que buscas pueden ser creados dinámicamente".
+
+[[./images/features.png]]
+
+[[./mensajes-recibido.jpeg]]
 
 
 
@@ -60,7 +62,7 @@ services:
     - "9092:9092"
 #+end_src
 
-Accedemos vía [[localhost:8080]] al servicio de Jenkins. E instalamos el plugin de *SonarQube Scanner* y *CloudBees Docker Build and Publish plugin*
+Accedemos vía *localhost:8080* al servicio de Jenkins. E instalamos el plugin de *SonarQube Scanner* y *CloudBees Docker Build and Publish plugin*
 
 
 El /pipeline/ creado sería el siguiente:
@@ -75,21 +77,6 @@ ngrok http 8080
 [[./images/instancias.png]]
 
 
-** TODO Añadir información obtenida de la web (En construcción)
-[[./images/features.png]]
-
-
-
-
 ** TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
 
 [[./Aplicaciones.PNG]]
-
-#+begin_src shell
-c:\Program Files\Docker\Docker\resources\dockerd.exe -H=tcp://0.0.0.0:2375
-docker network inspect bridge -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}'
-#+end_src
-
-#+begin_src shell
-git push -f origin HEAD^:master #deshacer el último pull
-#+end_src
