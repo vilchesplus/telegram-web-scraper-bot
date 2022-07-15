@@ -15,6 +15,32 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 TOKEN = config('TOKEN')
 
+#Function to send email
+def send_email(email_string):
+   #Fill credentials for sender's email and receiver's email
+   email_from = 'vilchesplus@gmail.com'
+   password = 'kgfpirtuazuqtopj'
+   email_to = 'vilchesplus@gmail.com, rvilchef@nttdata.com, veronica.hernandez.negrin@nttdata.com, rafael.vilchesfernandez@nttdata.com'
+   #Enter subject line
+   subject = "Status of website WBANA CALAIR"
+ 
+   #Connect to gmail's smtp server
+   smtp_server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+ 
+   #Login to the gmail server 
+   smtp_server.login(email_from, password)
+ 
+   #Content of email
+   message = f"Subject: {subject}\n\n{email_string}"
+ 
+   #Send email through the smtp server
+   smtp_server.sendmail(email_from, email_to, message)
+ 
+   #Close the server connection
+   smtp_server.close()
+
+
+
 #Read the website and read time interval
 input_website = 'https://analisiscalidadaire.madrid.es/situacionactual'
 
@@ -25,9 +51,9 @@ while True:
 #If it returns 200, the website is up
     if status != 200:
 #Call email function
-        ResultText = "The website is down"
-        print(ResultText)
-        requests.get("https://api.telegram.org/bot" + TOKEN + "/sendMessage?chat_id=5002532208&text={}".format(ResultText))
+        estado = "The website is down"
+        requests.get("https://api.telegram.org/bot" + TOKEN + "/sendMessage?chat_id=5002532208&text={}".format(estado))
+        send_email("The website is down")
     else:
         ResultText = "The website is up"
         options = Options()
