@@ -77,6 +77,10 @@ ngrok http 8080
 [[./images/instancias.PNG]]
 
 
+** TODO Añadir SSH Plugin sobre Jenkins.
+La idea es conseguir conexión vía ssh desde el contenedor hacia la instancia de ec2.
+[[https://faun.pub/use-jenkins-to-run-scripts-in-aws-ec2-1f3d1307263a]]
+
 ** TODO Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)   
 
 [[./Aplicaciones.PNG]]

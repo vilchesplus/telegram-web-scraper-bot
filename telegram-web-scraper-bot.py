@@ -58,8 +58,8 @@ while True:
         ResultText = "The website is up"
         options = Options()
         options.headless = True
-        #driver = webdriver.Remote("http://172.31.47.232:4444/wd/hub",options=options)
-        driver = webdriver.Chrome('C:/Users/rvilchef/OneDrive - NTT DATA EMEAL/chromedriver', options=options)
+        driver = webdriver.Remote("http://192.168.8.51:4444/wd/hub",options=options)
+        #driver = webdriver.Chrome('C:/Users/rvilchef/OneDrive - NTT DATA EMEAL/chromedriver', options=options)
         driver.get("https://analisiscalidadaire.madrid.es/situacionactual")
         time.sleep(5)
         a = driver.find_element(by=By.XPATH, value=("//*[@id='tiempo_real_fecha']")).text
