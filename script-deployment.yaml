@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  labels: 
+    app: script
+  name: script-deployment
+spec: 
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: script
+  template: 
+    metadata: 
+      labels: 
+        app: script
+    spec: 
+      containers: 
+        - 
+          image: vilchesplus/web-scraper-telegram-bot
+          name: script
+          ports: 
+            - 
+              containerPort: 5000
+       
