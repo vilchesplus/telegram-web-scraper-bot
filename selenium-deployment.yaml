@@ -2,23 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata: 
   labels: 
-    app: script
-  name: script-deployment
+    app: selenium
+  name: selenium
 spec: 
   replicas: 1
   selector: 
     matchLabels: 
-      app: script
+      app: selenium
   template: 
     metadata: 
       labels: 
-        app: script
+        app: selenium
     spec: 
       containers: 
         - 
-          image: vilchesplus/web-scraper-telegram-bot
-          name: script
+          image: selenium/standalone-chrome
+          name: selenium
           ports: 
             - 
-              containerPort: 5000
-       
+              containerPort: 4444
