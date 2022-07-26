@@ -58,7 +58,11 @@ while True:
         ResultText = "The website is up"
         options = Options()
         options.headless = True
+<<<<<<< HEAD
         driver = webdriver.Remote("http://192.168.8.51:4444/wd/hub",options=options)
+=======
+        driver = webdriver.Remote("http://10.100.68.21:4444/wd/hub",options=options)
+>>>>>>> 163b438ea7bba709ec5501384be907d2fae03880
         #driver = webdriver.Chrome('C:/Users/rvilchef/OneDrive - NTT DATA EMEAL/chromedriver', options=options)
         driver.get("https://analisiscalidadaire.madrid.es/situacionactual")
         time.sleep(5)
