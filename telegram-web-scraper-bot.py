@@ -20,7 +20,7 @@ def send_email(email_string):
    #Fill credentials for sender's email and receiver's email
    email_from = 'vilchesplus@gmail.com'
    password = 'kgfpirtuazuqtopj'
-   email_to = 'vilchesplus@gmail.com', 'rvilchef@nttdata.com', 'veronica.hernandez.negrin@nttdata.com', 'rafael.vilchesfernandez@nttdata.com'
+   email_to = 'veronica.hernandez.negrin@nttdata.com'
    #Enter subject line
    subject = "Status of website WBANA CALAIR"
  
@@ -59,7 +59,7 @@ while True:
         options = Options()
         options.headless = True
 
-        driver = webdriver.Remote("http://192.168.8.51:4444/wd/hub",options=options)
+        driver = webdriver.Remote("http://10.1.0.130:4444/wd/hub",options=options)
 
 
         #driver = webdriver.Chrome('C:/Users/rvilchef/OneDrive - NTT DATA EMEAL/chromedriver', options=options)

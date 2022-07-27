@@ -13,12 +13,15 @@ spec:
     metadata: 
       labels: 
         app: script
-    spec: 
+    spec:
       containers: 
-        - 
-          image: vilchesplus/web-scraper-telegram-bot
-          name: script
-          ports: 
-            - 
-              containerPort: 5000
-       
+        - image: vilchesplus/web-scraper-telegram-bot
+          name: script-1
+          ports:
+           - containerPort: 5000
+        - image: vilchesplus/notifier
+          name: script-2
+          ports:
+           - containerPort: 5001
+           
+           
