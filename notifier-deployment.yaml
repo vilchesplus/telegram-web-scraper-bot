@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata: 
   labels: 
-    app: app1
-  name: app1-deployment
+    app: app2
+  name: app2-deployment
 spec: 
   replicas: 1
   selector: 
     matchLabels: 
-      app: app1
+      app: app2
   template: 
     metadata: 
       labels: 
-        app: app1
+        app: app2
     spec:
-      containers: 
-        - image: vilchesplus/web-scraper-telegram-bot
-          name: app1
+      containers:        
+        - image: vilchesplus/notifier
+          name: app2
           ports:
-           - containerPort: 5000
+           - containerPort: 5001
            
            
