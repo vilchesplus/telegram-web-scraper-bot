@@ -85,4 +85,8 @@ La idea es conseguir conexión vía ssh desde el contenedor hacia la instancia de 
 
 [[./Aplicaciones.PNG]]
 
+[[./despliegue-en-local.PNG]]
+
+
+
 

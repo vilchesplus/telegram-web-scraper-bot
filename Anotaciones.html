@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-19 ma. 09:28 -->
+<!-- 2022-08-02 ma. 07:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Anotaciones</title>
@@ -222,21 +222,21 @@ Está escrito en Python, y se proporciona un <b>token</b> que corresponde con un
 Basta con ejecutar cualquiera de los scripts y ya estaría funcionando.
 </p>
 
-<div id="outline-container-orgf2d574b" class="outline-2">
-<h2 id="orgf2d574b"><span class="section-number-2">1.</span> <span class="done DONE">DONE</span> Añadir Fecha y hora del último dato cargado en la página web.</h2>
+<div id="outline-container-orga3f00c7" class="outline-2">
+<h2 id="orga3f00c7"><span class="section-number-2">1.</span> <span class="done DONE">DONE</span> Añadir Fecha y hora del último dato cargado en la página web.</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Se ha añadido el script de Python scrapeo utilizando Selenium y un driver de Chrome para obtener el dato que comentamos, ya que realizando un scrapeo normal no es posible debido a que y cito textualmente "La fuente es sólo el HTML base que se sirve. Cuando inspeccionas la página en Chrome, estás viendo el DOM renderizado después de que cualquier javascript en la página haya terminado de hacer su trabajo. En otras palabras, los elementos que buscas pueden ser creados dinámicamente".
 </p>
 
 
-<div id="org6da0e3a" class="figure">
+<div id="orgd0d4f76" class="figure">
 <p><img src="./images/features.PNG" alt="features.PNG" />
 </p>
 </div>
 
 
-<div id="org62f0834" class="figure">
+<div id="org94633fd" class="figure">
 <p><img src="./mensajes-recibido.jpeg" alt="mensajes-recibido.jpeg" />
 </p>
 </div>
@@ -249,8 +249,8 @@ Otra manera de acuerdo con la manera de trabajar que se está instaurando es la 
 </div>
 </div>
 
-<div id="outline-container-org1fe4799" class="outline-2">
-<h2 id="org1fe4799"><span class="section-number-2">2.</span> <span class="done DONE">DONE</span> Objetivo: CI/CD</h2>
+<div id="outline-container-orgf50cdee" class="outline-2">
+<h2 id="orgf50cdee"><span class="section-number-2">2.</span> <span class="done DONE">DONE</span> Objetivo: CI/CD</h2>
 <div class="outline-text-2" id="text-2">
 <p>
  La combinación de la integración continua y el despliegue se denomina a menudo CI/CD.
@@ -271,8 +271,8 @@ Un pipeline típico para aplicaciones en contenedor podría ser como el siguient
 </ol>
 </div>
 
-<div id="outline-container-org9db96c1" class="outline-3">
-<h3 id="org9db96c1"><span class="section-number-3">2.1.</span> Instalación de Jenkins como herramienta CI/CD</h3>
+<div id="outline-container-orgf8fc625" class="outline-3">
+<h3 id="orgf8fc625"><span class="section-number-3">2.1.</span> Instalación de Jenkins como herramienta CI/CD</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Creamos el archivo .yaml con el que levantaremos <b>Jenkins</b> y <b>Sonarqube</b>
@@ -317,11 +317,11 @@ Necesitaremos también abrir una conexión tunel entre github y Jenkins, mediant
 </div>
 </div>
 
-<div id="outline-container-orgabb2063" class="outline-2">
-<h2 id="orgabb2063"><span class="section-number-2">3.</span> <span class="done DONE">DONE</span> Ejecutar desde la nube los contenedores.</h2>
+<div id="outline-container-orge73811a" class="outline-2">
+<h2 id="orge73811a"><span class="section-number-2">3.</span> <span class="done DONE">DONE</span> Ejecutar desde la nube los contenedores.</h2>
 <div class="outline-text-2" id="text-3">
 
-<div id="org8c64362" class="figure">
+<div id="org78ac257" class="figure">
 <p><img src="./images/instancias.PNG" alt="instancias.PNG" />
 </p>
 </div>
@@ -329,28 +329,35 @@ Necesitaremos también abrir una conexión tunel entre github y Jenkins, mediant
 </div>
 
 
-<div id="outline-container-org420e867" class="outline-2">
-<h2 id="org420e867"><span class="section-number-2">4.</span> <span class="todo TODO">TODO</span> Añadir SSH Plugin sobre Jenkins.</h2>
+<div id="outline-container-orgd991375" class="outline-2">
+<h2 id="orgd991375"><span class="section-number-2">4.</span> <span class="todo TODO">TODO</span> Añadir SSH Plugin sobre Jenkins.</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 La idea es conseguir conexión vía ssh desde el contenedor hacia la instancia de ec2.
+<a href="https://faun.pub/use-jenkins-to-run-scripts-in-aws-ec2-1f3d1307263a">https://faun.pub/use-jenkins-to-run-scripts-in-aws-ec2-1f3d1307263a</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org920d0f4" class="outline-2">
-<h2 id="org920d0f4"><span class="section-number-2">5.</span> <span class="todo TODO">TODO</span> Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)</h2>
+<div id="outline-container-orgf547a64" class="outline-2">
+<h2 id="orgf547a64"><span class="section-number-2">5.</span> <span class="done DONE">DONE</span> Pasar de Docker a Kubernetes (facilidad para levantar los contenedores de manera automática ante errores ocasionados, o tener replicas desplegadas)</h2>
 <div class="outline-text-2" id="text-5">
 
-<div id="org33cf0d6" class="figure">
+<div id="org7012b06" class="figure">
 <p><img src="./Aplicaciones.PNG" alt="Aplicaciones.PNG" />
+</p>
+</div>
+
+
+<div id="org1223831" class="figure">
+<p><img src="./despliegue-en-local.PNG" alt="despliegue-en-local.PNG" />
 </p>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2022-07-19 ma. 09:28</p>
+<p class="date">Created: 2022-08-02 ma. 07:51</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
