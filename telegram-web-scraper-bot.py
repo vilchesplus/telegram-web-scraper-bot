@@ -14,12 +14,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 TOKEN = config('TOKEN')
-password = config('password')
+password_mail = config('password')
 #Function to send email
 def send_email(email_string):
    #Fill credentials for sender's email and receiver's email
    email_from = 'vilchesplus@gmail.com'
-   password = password
+   password = password_mail
    email_to = 'veronica.hernandez.negrin@nttdata.com'
    #Enter subject line
    subject = "Status of website WBANA CALAIR"
@@ -70,7 +70,7 @@ while True:
 
         print(ResultText)
         b = "Última carga de datos realizada: {}, \n {}".format(a, ResultText)
-        send_email(b)
+        #send_email(b)
         requests.get("https://api.telegram.org/bot" + TOKEN + "/sendMessage?chat_id=5002532208&text={}".format(b))
         time.sleep(2000)
 
